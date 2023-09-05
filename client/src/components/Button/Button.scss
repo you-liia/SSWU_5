@@ -1,0 +1,30 @@
+@import '../../scss/index.scss';
+
+.btn {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 700;
+    font-size: 1.042vw; 
+    color: #FFF;
+    background: $dark-blue-color; 
+    border-radius: 0.833vw; 
+    padding: 1.458vw 2.552vw 1.458vw 2.396vw;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center; 
+    
+    &__circle {
+        width: 1.042vw;
+        height: 0.99vw;
+        background-color: #335B6B;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.521vw;
+    }
+    &__arrow {
+        color: #FFFFFF;
+        width: 0.383vw;
+        height: 0.319vw;
+    } 
+}

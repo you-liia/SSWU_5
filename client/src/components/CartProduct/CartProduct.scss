@@ -1,0 +1,72 @@
+@import '../../scss/index.scss';
+
+.cart {
+    &__product {
+        display: flex;
+        margin-bottom: 2.396vw;
+        align-items: center;
+        position: relative;
+    }
+    &__image {
+        width: 15.208vw;
+        background: $light-gray-color;
+        mix-blend-mode: multiply;
+    }
+    &__name {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 600;
+        font-size: 2.083vw; 
+        color: $dark-blue-color;
+        width: 17vw;
+    }
+    &__price {
+        @include price;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 1.25vw; 
+        margin-left: 0.625vw;
+        margin-top: 0.6vw;
+    }
+    &__discount-price {
+        @include discount-price;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 2.083vw; 
+        margin-left: 1.042vw;
+    }
+    &__one-price {
+        @include discount-price;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 2.083vw; 
+        margin-left: 5.5vw;
+    }
+    &__quantity {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 1.667vw;  
+        color: $dark-blue-color;
+        margin-left: 12.135vw;
+    }
+    &__quantity-input {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 1.042vw; 
+        color: rgba(39, 76, 91, 0.4);
+        text-align: center;
+        border-radius: 0.833vw;
+        border: 0.104vw solid $dark-blue-color;
+        background: #FFF;
+        box-sizing: border-box;
+        margin-left: 1.146vw;
+        width: 6.979vw;
+        height: 4.167vw; 
+        
+        &:focus {
+            color: $dark-blue-color;
+        }
+    }
+    &__btn-delete{
+        padding: 0.6vw 1.3vw;
+        position: absolute;
+        right: -8vw;
+        margin-left: 5.104vw;
+    }
+}

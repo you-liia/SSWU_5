@@ -1,0 +1,78 @@
+@import '../../scss/index.scss';
+
+.header {
+    padding-top: 3.594vw; 
+    padding-bottom: 3.594vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.979vw;
+
+    &__logo-link {
+        display: flex;  
+        align-items: center;
+        margin-right: 6.615vw;
+    }
+    &__logo {
+        height: 2.798vw;
+        margin-right: 0.428vw; 
+    }
+    &__logo-text {
+        @include title;
+        font-weight: 700;
+        font-size: 1.979vw;
+    }
+    &__menu {
+        @include title;
+        font-weight: 700;
+        font-size: 1.042vw; 
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-left: 1.198vw;
+        margin-right: 1.198vw;
+    }
+    &__link {
+        color: $dark-blue-color;
+    }
+    &__search {
+        width: 19.583vw;
+        height: 3.438vw; 
+        border-radius: 1.875vw;
+        background: #FAFAFA;
+        position: relative;
+        margin-right: 0.938vw; 
+        margin-left: 5.573vw;
+    }
+    &__search-circle { 
+        position: absolute;
+        right: 0;
+        top: 0.3vw;
+    }
+    &__search-image {
+        height: 2.917vw; 
+    }
+    &__cart {
+        display: flex; 
+        align-items: center;
+        width: 8.281vw;
+        height: 3.125vw; 
+        border-radius: 1.719vw; 
+        border: 0.052vw solid #E0E0E0;
+    }
+    &__cart-circle {
+        margin-left: 0.1vw;
+    }
+    &__cart-image {
+        height: 2.917vw; 
+    }
+    &__cart-txt {
+        @include title;
+        font-weight: 600;
+        font-size: 0.938vw; 
+        margin-left: 0.625vw;
+    }
+}

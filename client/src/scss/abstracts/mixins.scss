@@ -1,0 +1,43 @@
+@mixin container {
+    max-width: 72.917vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin subtitle {
+    font-family: 'Yellowtail', cursive;
+    font-weight: 400;
+    font-size: 1.875vw; 
+    color: $green-color;
+    text-transform: capitalize;
+}
+
+@mixin title {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 800;
+    font-size: 2.604vw; 
+    color: $dark-blue-color;
+    text-transform: capitalize;
+}
+
+@mixin text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.938vw; 
+    color: $dark-gray-color;
+}
+
+@mixin price {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.781vw; 
+    color: #B8B8B8;
+    text-decoration: line-through;
+}
+
+@mixin discount-price {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.938vw; 
+    color: $dark-blue-color;
+}

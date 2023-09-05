@@ -1,0 +1,18 @@
+@import '../../scss/index.scss';
+
+.thanks {
+    padding-top: 4.896vw;
+    padding-bottom: 8.75vw;
+
+    &__text {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 800;
+        font-size: 3.646vw; 
+        color: $dark-blue-color;
+        margin-bottom: 2.292vw;
+        text-align: center;
+    }
+    &__image {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+@import '../../scss/index.scss';
+
+.products {
+    &__card {
+        border-radius: 1.563vw;
+        background: $light-gray-color;
+        width: 17.448vw;
+        height: 22.761vw;
+        padding-top: 1.51vw;
+        padding-bottom: 0.885vw;
+
+        &:hover {
+            box-shadow: 0 0.417vw 1.042vw 0 rgba(0, 0, 0, 0.14);
+        }
+    }
+    &__category {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.781vw; 
+        color: #FFF;
+        background: $dark-blue-color;
+        border-radius: 0.417vw;
+        padding: 0.26vw 0.625vw;
+        width: fit-content;
+        text-align: center;
+        text-transform: capitalize;
+        margin-left: 1.563vw;
+    }
+    &__image { 
+        width: auto;
+        height: 16.875vw;
+        background: $light-gray-color;
+        mix-blend-mode: multiply;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__name {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 600;
+        font-size: 1.042vw;
+        color: $dark-blue-color;
+        margin-left: 1.563vw;
+    }
+    &__line {
+        width: 14.322vw;
+        height: 0.052vw; 
+        background-color: #DEDDDD;
+        margin: 0.677vw auto 0.469vw;
+    }
+    &__details {
+        display: flex;
+        align-items: baseline;
+        position: relative;
+    }
+    &__price {
+        @include price;
+        font-size: 0.781vw;
+        margin-left: 1.615vw;
+    }
+    &__discount-price {
+        @include discount-price;
+        font-size: 0.938vw; 
+        margin-left: 0.417vw;
+    }
+    &__one-price {
+        @include discount-price;
+        font-size: 0.938vw;
+        margin-left: 1.615vw;
+    }
+    &__rating {
+        font-size: 0.75vw;
+        letter-spacing: 0.1vw;
+        color: #FFA858;
+        position: absolute;
+        right: 1.5vw;
+        top: 0.12vw;
+    }
+}

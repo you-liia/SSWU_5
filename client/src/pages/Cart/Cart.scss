@@ -1,0 +1,62 @@
+@import '../../scss/index.scss';
+
+.cart {
+    &__bg {
+        background-image: url(../../img/cart-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 100%;
+        height: 23.438vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__bg-text {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 800;
+        font-size: 3.646vw; 
+        color: $dark-blue-color;
+        margin-bottom: 2.292vw;
+        text-align: center;
+    } 
+    &__order {
+        padding-top: 7.318vw;
+    }
+    &__order-area {
+        background: rgba(253, 176, 45, 0.16);
+        padding-top: 7.786vw;
+        padding-bottom: 4.531vw; 
+    }
+    &__container {
+        @include container;
+    }
+    &__total {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 2.083vw; 
+        color: $dark-blue-color;
+        margin-bottom: 5.417vw; 
+    }
+    &__total-cost-wrapper,
+    &__discount-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__discount-wrapper {
+        margin-top: 1.667vw;
+    }
+    &__total-cost-text {
+        margin-right: 1.563vw;
+    }
+    &__discount-text {
+        margin-right: 2.552vw;
+    }
+    &__total-cost,
+    &__discount {
+        margin-right: 0.417vw;
+    }
+    &__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,138 @@
+@import '../../scss/index.scss';
+
+.products {
+    &__window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        background: #FFFAFA;
+        padding-top: 5.99vw;
+        padding-bottom: 6.5vw;
+    }
+    &__window-container {
+        @include container;
+    }
+    &__window-card-details {
+        display: flex;
+    }
+    &__window-category {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.781vw; 
+        color: #FFF;
+        background: $dark-blue-color;
+        border-radius: 0.417vw; 
+        padding: 0.26vw 0.625vw 0.313vw;
+        width: fit-content;
+        text-align: center;
+        text-transform: capitalize;
+        position: absolute;
+        margin-left: 2.031vw;
+        margin-top: 1.979vw; 
+    }
+    &__window-image {
+        width: auto;
+        height: 31.25vw;
+        background: $light-gray-color;
+        mix-blend-mode: multiply;
+    }
+    &__window-details {
+        margin-left: 3.958vw;
+    }
+    &__window-name {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 600;
+        font-size: 2.083vw; 
+        color: $dark-blue-color;
+        text-transform: capitalize;
+        margin-top: 5.563vw;
+        margin-bottom: 0.469vw;
+    }
+    &__window-rating {
+        font-size: 0.75vw;
+        color: #FFA858;
+        margin-bottom: 0.469vw;
+    }
+    &__window-prices {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 1.406vw;
+    }
+    &__window-price {
+        @include price;
+        font-size: 1.042vw; 
+    }
+    &__window-discount-price {
+        @include discount-price;
+        font-size: 1.302vw; 
+        margin-left: 0.469vw;
+    }
+    &__window-one-price {
+        @include discount-price;
+        font-size: 1.302vw; 
+    }
+    &__window-text {
+        @include text;
+        width: 34.271vw;
+        margin-bottom: 1.823vw;
+    }
+    &__window-add-to-cart {
+        display: flex;
+        align-items: center;
+    }
+    &__window-quantity {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 1.042vw; 
+        color: $dark-blue-color;
+    }
+    &__window-quantity-input {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 1.042vw; 
+        color: rgba(39, 76, 91, 0.4);
+        text-align: center;
+        border-radius: 0.833vw;
+        border: 0.104vw solid $dark-blue-color;
+        background: #FFF;
+        width: 6.979vw; 
+        height: 4.167vw;  
+        margin-left: 1.146vw;
+        margin-right: 1.042vw;
+    }
+    &__window-btn-add.btn {
+        border: 0.104vw solid $dark-blue-color;
+        &:hover {
+            background: $yellow-color;
+            border: 0.104vw solid $yellow-color;
+        }
+    }
+    &__window-btn-close.btn {
+        padding: 0.6vw 1.3vw;
+        margin-left: 1.615vw;
+    }
+    &__window-info {
+        text-align: center;
+        margin-top: 4.688vw;
+    }
+    &__window-btn-info.btn {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.302vw; 
+        padding: 1.198vw 3.125vw;
+        margin-right: 1.042vw;
+        display: inline; 
+    }
+    &__window-btn-info_inactive.btn {
+        background: $super-light-green-color;
+        color: $dark-blue-color;
+    }
+    &__window-description-info {
+        @include text;
+        width: 59.219vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.406vw;
+    }
+}

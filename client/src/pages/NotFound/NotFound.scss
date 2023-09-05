@@ -1,0 +1,39 @@
+@import '../../scss/index.scss';
+
+.error-404 {
+    background-image: url(../../img/404-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 46.771vw;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: right;
+    }
+    &__info {
+        margin-top: 7.6vw;
+    }
+    &__number {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 15.625vw;
+        color: #8fa8a8;
+    }
+    &__text {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 800;
+        font-size: 3.646vw; 
+        color: $dark-blue-color;
+        margin-top: -2.6vw;
+    }
+    &__description {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.938vw; 
+        color: $dark-gray-color;
+        margin-top: 0.48vw;
+        margin-bottom: 1.864vw;
+    }
+}

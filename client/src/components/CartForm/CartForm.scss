@@ -1,0 +1,58 @@
+@import '../../scss/index.scss';
+
+.cart {
+    &__form {
+        margin-bottom: 3.333vw; 
+    }
+    &__form-group-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2.396vw;
+        margin-bottom: 2.604vw; 
+    }
+    &__form-label {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 600;
+        font-size: 0.938vw; 
+        color: $dark-blue-color;
+        text-transform: capitalize;
+        display: block;
+        margin-bottom: 1.354vw;
+    }
+    &__form-input {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 400;
+        font-size: 1.25vw;
+        font-style: italic;
+        color: $dark-blue-color;
+        padding-left: 1.198vw;
+        border-radius: 0.833vw; 
+        border: 0.052vw solid $green-color;
+        background: #FFF;
+        width: 28.438vw; 
+        height: 4.167vw;   
+
+        &::placeholder {
+            color: #ABABAB;
+            font-size: 0.938vw; 
+        }
+    }
+    &__form-input_message {
+        padding-top: 1.458vw;
+        width: 60.469vw; 
+        height: 11.406vw; 
+    }
+    &__form-error { 
+        color: #942222;
+        font-size: 0.938vw; 
+        position: absolute; 
+    }
+    &__form-btn {
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover {
+            background: $yellow-color;
+        }
+    }
+}
