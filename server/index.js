@@ -4,6 +4,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+require('dotenv').config();
+
 const defaultRoute = require('./routes/default'); 
 const productsRoute = require('./routes/products');
 const ordersRoute = require('./routes/orders');

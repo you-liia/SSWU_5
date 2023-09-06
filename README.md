@@ -1,4 +1,5 @@
 # *Organick*
+_Organick is an online store for organic products. On the website, users can browse products and view detailed information about them, add favorites to the cart, and place orders. The project is developed using React, Node.js, and MySQL, follows the BEM methodology, utilizes the SCSS preprocessor, and is compatible with various browsers including Chrome and Firefox._
 
 ## Technologies
 <div align="center">
@@ -28,6 +29,15 @@ npm start
 ```
 The server part should be accessible at http://localhost:8000
 and the client part at http://localhost:3000.
+
+#### Database Setup:
+- Create a new MySQL database. 
+
+- Import data from the backup file (database.sql) into it.
+
+- Update the .env file with the new connection information for the newly created database.
+
+- Restart the server.
 
 ## Project details
 
