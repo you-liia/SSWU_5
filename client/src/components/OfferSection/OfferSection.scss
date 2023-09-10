@@ -1,0 +1,24 @@
+@import '../../scss/index.scss';
+
+.offer {
+    padding-top: 10.417vw;
+    padding-bottom: 10.417vw;
+    background: $dark-blue-color;
+
+    &__container {
+        @include container;
+    }
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 0.417vw;
+    }
+    &__title {
+        @include title;
+        color: #FFF;
+        margin-bottom: 2.604vw;
+    }
+    &__cards {
+        display: flex;
+        column-gap: 1.04vw;
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../scss/index.scss';
+
+.natural-food {
+    background-image: url(../../img/natural-food-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 46.771vw; 
+
+    &__container {
+        @include container;
+        height: 100%;
+        display: flex;
+        align-items: center;    
+    }
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 0.417vw;
+    }
+    &__title {
+        @include title;
+        font-size: 3.646vw;
+        text-transform: none;
+        width: 31vw;
+        margin-bottom: 1.198vw;
+    }
+    &__btn {
+        background: #EFD372;
+        color: $dark-blue-color;
+    }
+}

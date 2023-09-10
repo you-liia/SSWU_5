@@ -1,0 +1,50 @@
+@import '../../scss/index.scss';
+
+.eco-friendly {
+    
+    &__image {
+        width: 49.583vw;
+        height: 48.49vw;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+    }
+    &__container {
+        @include container;
+        height: 48.49vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__info {
+        background: #FFF;
+        border-radius: 1.563vw;
+        width: 36.458vw;
+        padding-top: 4.063vw;
+        padding-left: 4.635vw;
+        padding-bottom: 4.01vw;
+    }
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 0.417vw;
+    }
+    &__title {
+        @include title;
+        text-transform: none;
+        width: 26vw;
+    }
+    &__item {
+        margin-top: 1.823vw;
+
+        &-title {
+            @include title;
+            text-transform: none;
+            font-weight: 500;
+            font-size: 1.302vw;
+        }
+        &-text {
+            @include text;
+            width: 33.073vw;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@import '../../scss/index.scss';
+
+.testimonial {
+    background-image: url(../../img/testimonial-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 65.99vw; 
+    text-align: center;
+
+    &__container {
+        @include container;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__info {
+        height: 100%;
+    }
+    &__subtitle{
+        @include subtitle;
+        margin-top: 8.542vw;
+        margin-bottom: 0.417vw;
+    }
+    &__title {
+        @include title;
+        margin-bottom: 3.125vw;
+    }
+    &__image {
+        width: 5.99vw;
+        height: 5.99vw;
+        border-radius: 50%;
+        margin-bottom: 1.042vw;
+    }
+    &__rating {
+        font-size: 1.1vw;
+        letter-spacing: 0.1vw;
+        color: #FFA858;
+        margin-bottom: 1.302vw;
+    }
+    &__text {
+        @include text;
+        width: 40.625vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.042vw;
+    }
+    &__name {
+        @include title;
+        font-weight: 600;
+        font-size: 1.302vw;
+    }
+    &__consumer {
+        @include text;
+        font-size: 0.781vw;
+    }
+    &__dots {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__dot {
+        width: 0.417vw;
+        height: 0.417vw;
+        display: inline-block;
+        border-radius: 50%;
+        background: #C4C4C4;
+        margin-left: 0.156vw;
+        margin-right: 0.156vw;
+
+        &_active {
+            background: $green-color;
+        }
+    }
+    &__line {
+        width: 57.708vw;
+        height: 0.052vw;
+        background: #E0E0E0;
+        margin: 5.313vw auto;
+    }
+    &__counters {
+        display: flex;
+        justify-content: center;
+    }
+    &__counter {
+        width: 10.50vw;
+        height: 10.50vw;
+        border-radius: 50%;
+        background: #F1F1F1;
+        border: 0.25vw solid #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.615vw;
+        margin-right: 1.615vw;
+
+        &::after {
+            content: '';
+            width: 11vw;
+            height: 11vw;
+            position: absolute;
+            border: 0.25vw solid #7EB693;
+            border-radius: 50%;
+        }
+        &-info {
+            @include title;
+        }
+        &-text {
+            @include text;
+            font-weight: 600;
+            color: $dark-blue-color;
+            display: block;
+        }
+    }
+}

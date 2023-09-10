@@ -1,0 +1,116 @@
+@import '../../scss/index.scss';
+
+.news {
+    padding-top: 9.219vw;
+    padding-bottom: 4.479vw;
+
+    &__container {
+        @include container;
+    }
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 0.417vw;
+    }
+    &__title-btn-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 2.344vw;
+    }
+    &__title {
+        @include title;
+        text-transform: none;
+        width: 40vw;
+    }
+    &__btn {
+        color: $dark-blue-color;
+        background-color: #FFF;
+        border: 0.104vw solid $dark-blue-color;  
+        height: 4.167vw;
+        &:hover {
+            background-color: $yellow-color;
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        background-repeat: no-repeat;
+        background-size: cover; 
+        border-radius: 1.563vw;
+        width: 35.26vw;
+        height: 27.292vw;
+
+        &_cabbage {
+            background-image: url(../../img/news-cabbage.png);
+        }
+        &_tomato {
+            background-image: url(../../img/news-tomatoes.png);
+        }
+    }
+    &__circle {
+        width: 4.271vw;
+        height: 4.271vw;
+        border-radius: 50%;
+        background: #FFF; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.396vw;
+        margin-left: 1.667vw;
+
+        &-text {
+            @include title;
+            font-size: 1.302vw;
+            text-align: center;
+
+            &-month {
+                display: block;
+                font-size: 1.042vw;
+            }
+        }
+    }
+    &__item {
+        width: 25.99vw;
+        height: 11.667vw;
+        border-radius: 1.563vw;
+        padding: 2.396vw 2.969vw 3.125vw;
+        background: #FFF;
+        box-shadow: 0 1.042vw 1.823vw 0 rgba(167, 167, 167, 0.25);
+        margin-top: 7.135vw;
+        margin-left: 1.667vw;
+
+        &-author-wrapper {
+            display: flex;
+            margin-bottom: 0.781vw;
+        }
+        &-image {
+            width: 0.938vw;
+            height: 1.042vw;
+            margin-right: 0.417vw;
+        }
+        &-author {
+            @include title;
+            font-weight: 400;
+            font-size: 0.938vw;
+        }
+        &-title {
+            @include title;
+            font-size: 1.2vw;
+            margin-bottom: 0.15vw;
+        }
+        &-text {
+            @include text;
+            width: 23.125vw;
+            margin-top: 0.3vw;
+            margin-bottom: 0.781vw;
+        }
+        &-btn {
+            color: $dark-blue-color;
+            background-color: $yellow-color;
+            margin-top: 1vw;
+        }
+    }
+}

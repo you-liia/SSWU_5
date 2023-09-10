@@ -1,0 +1,45 @@
+@import '../../scss/index.scss';
+
+.offer-banners {
+    padding-top: 8.021vw;
+    padding-bottom: 8.021vw;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 35.533vw;
+        height: 19.115vw;
+        border-radius: 1.563vw;
+        display: flex;
+        align-items: center;
+    }
+    &__item_natural {
+        background-image: url(../../img/offer-banner-natural.png);
+    }
+    &__item_discount {
+        background-image: url(../../img/offer-banner-discount.png);
+    }
+    &__item-subtitle {
+        @include subtitle;
+        margin-left: 2.865vw;
+        margin-bottom: 0.26vw;
+        &_natural {
+            color: #FFF;
+        }
+    }
+    &__item-title {
+        @include title;
+        text-transform: none;
+        font-size: 2.083vw;
+        width: 16vw;
+        margin-left: 2.865vw;
+        &_natural {
+            color: #FFF;
+        }
+    }
+}

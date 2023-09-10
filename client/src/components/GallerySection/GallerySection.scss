@@ -1,0 +1,41 @@
+@import '../../scss/index.scss';
+
+.gallery {
+    background: #F1F8F4;
+    padding-top: 9.74vw;
+    padding-bottom: 9.74vw;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {  
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 31.875vw;
+        height: 30.365vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &_juice {
+            background-image: url(../../img/gallery-juice.png);
+        }
+        &_food {
+            background-image: url(../../img/gallery-food.png);
+        }
+        &_cookies {
+            background-image: url(../../img/gallery-cookies.png);
+        }
+        &-text {
+            @include title;
+            font-size: 1.302vw;
+            font-weight: 500;
+            background: #FFF;
+            width: fit-content;
+            padding: 1.719vw 4.323vw 1.771vw;
+            border-radius: 1.042vw;
+        }
+    }
+}
